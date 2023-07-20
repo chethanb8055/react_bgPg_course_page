@@ -47,7 +47,7 @@ const Card = ({ course, likedCourses, setLikedCourses }) => {
             <div className='w-[300px] bg-bgDark bg-opacity-80 overflow-hidden rounded-md '>
                 <div className='relative'>
                     <img src={course.image.url} alt={course.image.alt} />
-                    <div className='w-[30px] h-[30px] bg-white rounded-full absolute right-2 bottom-3 grid place-content-center text-red-400'>
+                    <div className='w-[30px] h-[30px] bg-white rounded-full absolute right-1 bottom-1 grid place-content-center text-red-200'>
                         <button onClick={ClickHandler}>
                             {
                                 likedCourses.includes(course.id) ? <FaHeart className='text-red-600' /> : <FaHeart />
